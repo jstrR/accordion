@@ -3,38 +3,32 @@ import {
   AccordionItem,
   AccordionTrigger,
   AccordionContent,
-} from "./Accordion";
+} from './Accordion';
 
 function App() {
   return (
-    <main className="h-dvh w-full flex items-center justify-center">
-      <Accordion className="bg-white min-w-[40rem]">
+    <main className="bg-gradient-purple flex h-dvh w-full items-center justify-center px-5">
+      <Accordion className="min-w-full bg-white sm:min-w-[60vw] lg:min-w-[35vw]">
         <AccordionItem value="1">
-          <AccordionTrigger className="bg-gray-200">
-            <p>Trigger 1</p>
-          </AccordionTrigger>
+          <AccordionTrigger>Trigger 1</AccordionTrigger>
           <AccordionContent>
             Yes. It adheres to the WAI-ARIA design pattern.
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="2">
-          <AccordionTrigger className="bg-gray-200">
-            <p>Trigger 2</p>
-          </AccordionTrigger>
+          <AccordionTrigger>Trigger 2</AccordionTrigger>
           <AccordionContent>
             Yes. It adheres to the WAI-ARIA design pattern. 2222
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="3">
-          <AccordionTrigger className="bg-gray-200">
-            <p>Trigger 3</p>
-          </AccordionTrigger>
+          <AccordionTrigger>Trigger 3</AccordionTrigger>
           <AccordionContent>
             Yes. It adheres to the WAI-ARIA design pattern. 2222
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="4">
-          <AccordionTrigger className="bg-gray-200">
+          <AccordionTrigger>
             <p>Trigger 4</p>
           </AccordionTrigger>
           <AccordionContent>

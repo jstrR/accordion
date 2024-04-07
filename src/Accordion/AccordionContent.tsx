@@ -1,6 +1,6 @@
-import { useContext, type PropsWithChildren, useRef } from "react";
-import { ClassValue, cn } from "../lib";
-import { AccordionItemContext } from "./lib";
+import { useContext, type PropsWithChildren, useRef } from 'react';
+import { ClassValue, cn } from '../lib';
+import { AccordionItemContext } from './lib';
 
 export const AccordionContent = ({
   className,
@@ -14,16 +14,13 @@ export const AccordionContent = ({
 
   return (
     <div
-      data-state={isOpened}
-      className={cn("transition-all overflow-hidden", className)}
+      data-state={isOpened ? 'open' : 'closed'}
+      className={cn('overflow-hidden bg-gray-100 transition-all', className)}
       style={{
         height: isOpened ? height || 0 : 0,
       }}
     >
-      <div
-        className="py-4 px-2"
-        ref={ref}
-      >
+      <div className="px-2 py-4 text-gray-800" ref={ref}>
         {children}
       </div>
     </div>
